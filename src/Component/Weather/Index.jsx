@@ -38,8 +38,8 @@ export default function App() {
     fetchWeather(trimmed);
     };
  return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-600 to-pink-500 flex flex-col items-center justify-center p-8">
-      <h1 className="text-5xl font-extrabold mb-10 text-white drop-shadow-lg">
+    <div className="min-h-screen  w-full overflow-x-hidden bg-gradient-to-br from-indigo-500 via-purple-600 to-pink-500 flex flex-col items-center justify-center p-8">
+      <h1 className="text-3xl font-extrabold mb-10 text-white drop-shadow-lg">
         🌤 Weather App
       </h1>
 
@@ -49,11 +49,11 @@ export default function App() {
           value={city}
           onChange={(e) => setCity(e.target.value)}
           placeholder="Enter city name"
-          className="flex-grow px-5 py-3 rounded-xl shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-300 text-gray-800 font-semibold transition"
+          className="flex-grow px-3 py-3 rounded-xl shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-300 text-gray-800 font-semibold transition"
         />
         <button
           onClick={handelSearch}
-          className="bg-purple-700 hover:bg-purple-800 active:bg-purple-900 transition text-white font-bold px-6 py-3 rounded-xl shadow-lg flex items-center justify-center"
+          className="bg-purple-700 hover:bg-purple-800 active:bg-purple-900 transition text-white font-bold px-5 py-3 rounded-xl shadow-lg flex items-center justify-center"
           disabled={loading}
         >
           {loading ? (
